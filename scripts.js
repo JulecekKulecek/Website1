@@ -1,5 +1,3 @@
-function alert() {
-    var i = "ahoj"
-    alert(i)
-    console.log(i)
+function showMessage() {
+    let msg = document.getElementById("message")
 }
