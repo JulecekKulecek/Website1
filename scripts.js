@@ -1,2 +1,5 @@
-let x = "ahoj negr"
-alert(x)
+function alert() {
+    var i = "ahoj"
+    alert(i)
+}
+alert()
