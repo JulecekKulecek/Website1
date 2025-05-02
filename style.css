@@ -8,21 +8,21 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 60px;
   background-color: #007bff;
   color: white;
-  padding: 15px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  padding: 0 20px;
   z-index: 1000;
-  height: 60px;
   box-sizing: border-box;
 }
 
 .promo-banner h1 {
-  margin: 0;
   font-size: 1.2rem;
+  margin: 0;
 }
 
 .promo-banner button {
@@ -40,10 +40,10 @@ body {
   background-color: #e0e0e0;
 }
 
-/* Fixed Gray Nav Bar */
+/* Fixed Gray Navigation Bar Directly Below */
 .nav-bar {
   position: fixed;
-  top: 60px; /* directly below blue bar */
+  top: 60px; /* No gap - directly below blue bar */
   width: 100%;
   height: 60px;
   background: linear-gradient(to right, #ccc, #eee);
@@ -51,7 +51,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
-  gap: 20px;
   z-index: 999;
   box-sizing: border-box;
 }
@@ -100,7 +99,7 @@ body {
   background-color: #0056b3;
 }
 
-/* Content offset below both fixed bars */
+/* Push content below fixed header (60 + 60 = 120px) */
 .content {
-  padding: 140px 30px 30px; /* 60px + 60px + margin */
+  padding: 140px 30px 30px;
 }
